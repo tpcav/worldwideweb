@@ -1,5 +1,5 @@
 # [WorldWideWeb](http://worldwideweb.live)
 
-> Powered by ABBATIA
+> Powered by © 2022 ABBATIA.
 
-Website for experimental web development for ABBATIA music, media, & future projects.
+Experimental web development for ABBATIA music, media, & future projects.
