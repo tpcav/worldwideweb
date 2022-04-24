@@ -71,16 +71,16 @@ h2{
 
 
 #footer p {
-	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 50px;
-	color: #333;
+	margin-top: 1px;
+	margin-bottom: 0px;
+	color: rgb(255, 255, 255);
 	font: 10px Arial, sans-serif;
 }
 
 .tabs {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
+	font-size: 30px;
 }
 .tabs li {
 	float: left;
@@ -93,9 +93,9 @@ h2{
 	display: block;
 	color: CYAN;
 	text-decoration: none;
-	font: bold 5px;
+	font: bold 50x;
 	text-transform: uppercase;
-	padding: 10px 51.55px;
+	padding: 10px 20.9px;
 }
 
 .tabs li a:hover {
@@ -373,7 +373,6 @@ code {
 	margin-bottom: 18px;
 	font: 13px Arial, sans-serif;
 }
-
 
 
 #installing h3{

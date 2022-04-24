@@ -80,6 +80,7 @@ h2{
 .tabs {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
+	font-size: 30px;
 }
 .tabs li {
 	float: left;
@@ -92,9 +93,9 @@ h2{
 	display: block;
 	color: CYAN;
 	text-decoration: none;
-	font: bold 5px;
+	font: bold 50x;
 	text-transform: uppercase;
-	padding: 10px 51.55px;
+	padding: 10px 20.9px;
 }
 
 .tabs li a:hover {
