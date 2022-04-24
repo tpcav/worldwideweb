@@ -1,0 +1,209 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script type="text/javascript">
+		(function ($) {
+			$.fn.easyTabs = function (option) {
+				var param = jQuery.extend({ fadeSpeed: "fast", defaultContent: 1, activeClass: 'active' }, option); $(this).each(function () {
+					var thisId = "#" + this.id; if (param.defaultContent == '') { param.defaultContent = 1; }
+					if (typeof param.defaultContent == "number") { var defaultTab = $(thisId + " .tabs li:eq(" + (param.defaultContent - 1) + ") a").attr('href').substr(1); } else { var defaultTab = param.defaultContent; }
+					$(thisId + " .tabs li a").each(function () { var tabToHide = $(this).attr('href').substr(1); $("#" + tabToHide).addClass('easytabs-tab-content'); }); hideAll(); changeContent(defaultTab); function hideAll() { $(thisId + " .easytabs-tab-content").hide(); }
+					function changeContent(tabId) {
+						hideAll(); $(thisId + " .tabs li").removeClass(param.activeClass); $(thisId + " .tabs li a[href=#" + tabId + "]").closest('li').addClass(param.activeClass); if (param.fadeSpeed != "none") { $(thisId + " #" + tabId).fadeIn(param.fadeSpeed); } else { $(thisId + " #" + tabId).show(); }
+					}
+					$(thisId + " .tabs li").click(function () { var tabId = $(this).find('a').attr('href').substr(1); changeContent(tabId); return false; });
+				});
+			}
+		})(jQuery);
+	</script>
+	<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<style type="text/css">
+		body {
+			font-family: 'modesevenregular';
+		}
+	</style>
+
+	<title>worldwideweb.live</title>
+
+
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			$('#container').easyTabs({ defaultContent: 1 });
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<center>
+			<div id="header">
+				worldwideweb.live </div>
+		</center>
+		
+		<center><ul class="tabs">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="#installing">STREAMING</a></li>
+			<li><a href="mode7gx3-demo copy.html">MEDIA</a></li>
+			<li><a href="#glyphs">STORE</a></li>
+			<li><a href="#installing">ABOUT</a></li>
+		</ul></center>
+
+		<div id="main_content">
+
+			<div id="specimen">
+
+				<div class="section">
+					<div class="grid12 firstcol">
+						<div class=""></div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="glyph_range">
+					</div>
+				</div>
+				
+				<div class="section">
+					<div class="grid12 firstcol">
+						<table class="sample_table">
+							<tr>
+								<td></td>
+								<td class="size90" >Powered by:</td>
+							</tr>
+							
+							<tr>
+								<td></td>
+								<td class="size10">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size11">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size12">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size13">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size14">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size16">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size18">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size20">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size24">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size30">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size36">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size48">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size60">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size72">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size90">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size72">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size60">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size48">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size36">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size30">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size24">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size20">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size18">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size16">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size14">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size13">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size12">ABBATIA</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="size11">ABBATIA</td>
+							</tr>
+						</table>
+
+						</div>
+					</div>
+				</div>
+		
+				<div>
+					<center><h1>JAZZ | DROOGIE | SYDNEY</h1></center>
+				</div>
+			<center><div id="footer">
+			<p>&copy; 2022 ABBATIA. All rights reserved.</p>
+		</div></center>
+	</div>
+</body>
+
+</html>
