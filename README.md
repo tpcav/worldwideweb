@@ -1,3 +1,3 @@
 # worldwideweb-live
 
-http://worldwideweb.live
+[WorldWideWeb]'http://worldwideweb.live'
