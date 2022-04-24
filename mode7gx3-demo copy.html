@@ -1,0 +1,160 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script type="text/javascript">
+		(function ($) {
+			$.fn.easyTabs = function (option) {
+				var param = jQuery.extend({ fadeSpeed: "fast", defaultContent: 1, activeClass: 'active' }, option); $(this).each(function () {
+					var thisId = "#" + this.id; if (param.defaultContent == '') { param.defaultContent = 1; }
+					if (typeof param.defaultContent == "number") { var defaultTab = $(thisId + " .tabs li:eq(" + (param.defaultContent - 1) + ") a").attr('href').substr(1); } else { var defaultTab = param.defaultContent; }
+					$(thisId + " .tabs li a").each(function () { var tabToHide = $(this).attr('href').substr(1); $("#" + tabToHide).addClass('easytabs-tab-content'); }); hideAll(); changeContent(defaultTab); function hideAll() { $(thisId + " .easytabs-tab-content").hide(); }
+					function changeContent(tabId) {
+						hideAll(); $(thisId + " .tabs li").removeClass(param.activeClass); $(thisId + " .tabs li a[href=#" + tabId + "]").closest('li').addClass(param.activeClass); if (param.fadeSpeed != "none") { $(thisId + " #" + tabId).fadeIn(param.fadeSpeed); } else { $(thisId + " #" + tabId).show(); }
+					}
+					$(thisId + " .tabs li").click(function () { var tabId = $(this).find('a').attr('href').substr(1); changeContent(tabId); return false; });
+				});
+			}
+		})(jQuery);
+	</script>
+	<link rel="stylesheet" href="specimen_files/specimen_stylesheet copy.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<style type="text/css">
+		body {
+			font-family: 'modesevenregular';
+		}
+	</style>
+
+	<title>worldwideweb.live</title>
+
+
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			$('#container').easyTabs({ defaultContent: 1 });
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<center>
+			<div id="header">
+				MEDIA </div>
+		</center>
+		<ul class="tabs">
+			<li><a href="mode7gx3-demo.html">HOME</a></li>
+			<li><a href="mode7gx3-demo copy.html">MEDIA</a></li>
+			<li><a href="#glyphs">STORE</a></li>
+			<li><a href="#installing">STREAMING</a></li>
+
+		</ul>
+
+		<div id="main_content">
+
+
+			<div id="specimen">
+
+				<div class="section">
+					<div class="grid12 firstcol">
+						<div class=""></div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="glyph_range">
+					</div>
+				</div>
+				<div class="section">
+					<center><img src="hellboy.png" width="400px" height="400px"></center>
+				</div>
+
+
+
+				<div class="section" id="bodycomparison">
+
+
+					<div id="xheight">
+
+						<code>
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+</code>
+
+						<p>We've already gone ahead and generated the code for you. All you have to do is link to the stylesheet in
+							your HTML, like this:</p>
+						<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet.css&quot; type=&quot;text/css&quot; charset=&quot;utf-8&quot; /&gt;</code>
+
+						<h2>3. Modify your own stylesheet</h2>
+						<p>To take advantage of your new fonts, you must tell your stylesheet to use them. Look at the original
+							@font-face declaration above and find the property called "font-family." The name linked there will be
+							what you use to reference the font. Prepend that webfont name to the font stack in the "font-family"
+							property, inside the selector you want to change. For example:</p>
+						<code>p { font-family: 'WebFont', Arial, sans-serif; }</code>
+
+						<h2>4. Test</h2>
+						<p>Getting webfonts to work cross-browser <em>can</em> be tricky. Use the information in the sidebar to help
+							you if you find that fonts aren't loading in a particular browser.</p>
+					</div>
+
+					<div class="grid5 sidebar">
+						<div class="box">
+							<h2>Troubleshooting<br />Font-Face Problems</h2>
+							<p>Having trouble getting your webfonts to load in your new website? Here are some tips to sort out what
+								might be the problem.</p>
+
+							<h3>Fonts not showing in any browser</h3>
+
+							<p>This sounds like you need to work on the plumbing. You either did not upload the fonts to the correct
+								directory, or you did not link the fonts properly in the CSS. If you've confirmed that all this is
+								correct and you still have a problem, take a look at your .htaccess file and see if requests are getting
+								intercepted.</p>
+
+							<h3>Fonts not loading in iPhone or iPad</h3>
+
+							<p>The most common problem here is that you are serving the fonts from an IIS server. IIS refuses to serve
+								files that have unknown MIME types. If that is the case, you must set the MIME type for SVG to
+								"image/svg+xml" in the server settings. Follow these instructions from Microsoft if you need help.</p>
+
+							<h3>Fonts not loading in Firefox</h3>
+
+							<p>The primary reason for this failure? You are still using a version Firefox older than 3.5. So upgrade
+								already! If that isn't it, then you are very likely serving fonts from a different domain. Firefox
+								requires that all font assets be served from the same domain. Lastly it is possible that you need to add
+								WOFF to your list of MIME types (if you are serving via IIS.)</p>
+
+							<h3>Fonts not loading in IE</h3>
+
+							<p>Are you looking at Internet Explorer on an actual Windows machine or are you cheating by using a
+								service like Adobe BrowserLab? Many of these screenshot services do not render @font-face for IE. Best
+								to test it on a real machine.</p>
+
+							<h3>Fonts not loading in IE9</h3>
+
+							<p>IE9, like Firefox, requires that fonts be served from the same domain as the website. Make sure that is
+								the case.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div id="footer">
+			<p>&copy;2022 ABBATIA. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+
+</html>
