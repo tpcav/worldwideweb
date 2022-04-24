@@ -2,4 +2,4 @@
 
 > Powered by ABBATIA
 
-Website for experimental web development for futre ABBATIA releases & projects.
+Website for experimental web development for ABBATIA music, media, & future projects.
