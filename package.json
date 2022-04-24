@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "deploy gh-pages -d dist"
+    "deploy": "deploy gh-pages -d docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://tpcav.github.io/worldwideweb",
   "dependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpcav/worldwideweb"
+  },
+  "bugs": {
+    "url": "https://github.com/tpcav/worldwideweb/issues"
   }
 }
