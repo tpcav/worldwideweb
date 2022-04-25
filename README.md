@@ -4,4 +4,4 @@
 
 Experimental website for ABBATIA music, media, & future projects releases. 
 
-## Using [Teletext](https://zxnet.co.uk/) inspired font called ModeSeven by [Galax](http;//worldwideweb.live)
+## Using [Teletext](https://zxnet.co.uk/) inspired font called ModeSeven by [Galax](http;//worldwideweb.live).
